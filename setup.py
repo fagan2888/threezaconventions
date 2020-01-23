@@ -10,11 +10,11 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="threezaconventions",
-    version="0.0.2",
+    version="0.0.3",
     description="Minimalist conventions used at www.3za.org ",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/microprediction/threeza-conventions",
+    url="https://github.com/microprediction/threezaconventions",
     author="microprediction",
     author_email="info@3za.org",
     license="MIT",
@@ -27,7 +27,7 @@ setup(
     test_suite='pytest',
     tests_require=['pytest'],
     include_package_data=True,
-    install_requires=[],
+    install_requires=['pathlib'],
     entry_points={
         "console_scripts": [
             "threezaconventions=threezaconventions.__main__:main",
